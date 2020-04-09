@@ -3,7 +3,9 @@ package main
 import (
 	"github.com/hashicorp/terraform/plugin"
 	"github.com/hashicorp/terraform/terraform"
-	"github.com/phogolabs/terraform-prana-provider/prana"
+	"github.com/phogolabs/terraform-provider-prana/prana"
+
+	_ "github.com/lib/pq"
 )
 
 func main() {
