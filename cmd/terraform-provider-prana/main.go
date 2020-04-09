@@ -5,6 +5,7 @@ import (
 	"github.com/hashicorp/terraform/terraform"
 	"github.com/phogolabs/terraform-provider-prana/prana"
 
+	_ "github.com/GoogleCloudPlatform/cloudsql-proxy/proxy/dialers/postgres"
 	_ "github.com/lib/pq"
 )
 

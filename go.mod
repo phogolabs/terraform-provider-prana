@@ -4,6 +4,7 @@ go 1.14
 
 require (
 	cloud.google.com/go v0.56.0 // indirect
+	github.com/GoogleCloudPlatform/cloudsql-proxy v0.0.0-20200408174246-cce6360f0224
 	github.com/agext/levenshtein v1.2.3 // indirect
 	github.com/aws/aws-sdk-go v1.30.7 // indirect
 	github.com/bmatcuk/doublestar v1.2.2 // indirect
