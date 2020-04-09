@@ -9,8 +9,8 @@ import (
 func NewProvider() *schema.Provider {
 	configure := func(d *schema.ResourceData) (interface{}, error) {
 		var (
-			driver = d.Get("database_driver").(string)
-			conn   = d.Get("database_connection").(string)
+			driver = d.Get("sql_driver").(string)
+			conn   = d.Get("sql_connection").(string)
 		)
 
 		return sqlx.Open(driver, conn)
@@ -19,14 +19,14 @@ func NewProvider() *schema.Provider {
 	return &schema.Provider{
 		ConfigureFunc: configure,
 		Schema: map[string]*schema.Schema{
-			"database_driver": {
+			"sql_driver": {
 				Type:        schema.TypeString,
-				Description: "Database Driver",
+				Description: "SQL Database Driver",
 				Required:    true,
 			},
-			"database_connection": {
+			"sql_connection": {
 				Type:        schema.TypeString,
-				Description: "Database Connection",
+				Description: "SQL Database Connection",
 				Required:    true,
 			},
 		},
