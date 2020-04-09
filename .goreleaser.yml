@@ -1,0 +1,17 @@
+before:
+  hooks:
+    - go mod download
+builds:
+- main: ./cmd/terraform-provider-prana/main.go
+  env:
+  - CGO_ENABLED=0
+  goos:
+  - linux
+  - darwin
+  - windows
+changelog:
+  sort: asc
+  filters:
+    exclude:
+    - '^docs:'
+    - '^test:'
