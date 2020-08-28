@@ -2,25 +2,33 @@ name: release
 
 on:
   push:
-    branches:
-      - "!*"
     tags:
-      - "v*.*.*"
-env:
-  GITHUB_TOKEN: ${{ secrets.GORELEASE_GITHUB_TOKEN }}
-
+      - 'v*'
 jobs:
-  pipeline:
+  goreleaser:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out Code
-        uses: actions/checkout@v1
+      - name: Checkout
+        uses: actions/checkout@v2
 
-      - name: Set up Golang
-        uses: actions/setup-go@v1
+      - name: Unshallow
+        run: git fetch --prune --unshallow
 
-      - name: Release Application
-        uses: goreleaser/goreleaser-action@v1
+      - name: Set up Go
+        uses: actions/setup-go@v2
+
+      - name: Import GPG key
+        uses: paultyng/ghaction-import-gpg@v2.1.0
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          PASSPHRASE: ${{ secrets.PASSPHRASE }}
+        id: gpg
+
+      - name: Run GoReleaser
+        uses: goreleaser/goreleaser-action@v2
         with:
           version: latest
-          args: release
+          args: release --rm-dist
+        env:
+          GPG_FINGERPRINT: ${{ steps.gpg.outputs.fingerprint }}
+          GITHUB_TOKEN: ${{ secrets.GORELEASE_GITHUB_TOKEN }}
