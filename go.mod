@@ -3,46 +3,39 @@ module github.com/phogolabs/terraform-provider-prana
 go 1.14
 
 require (
-	cloud.google.com/go v0.56.0 // indirect
-	github.com/GoogleCloudPlatform/cloudsql-proxy v0.0.0-20200408174246-cce6360f0224
+	cloud.google.com/go v0.65.0 // indirect
+	cloud.google.com/go/storage v1.11.0 // indirect
+	github.com/GoogleCloudPlatform/cloudsql-proxy v1.17.0
 	github.com/agext/levenshtein v1.2.3 // indirect
-	github.com/aws/aws-sdk-go v1.30.7 // indirect
-	github.com/bmatcuk/doublestar v1.2.2 // indirect
-	github.com/fatih/color v1.9.0 // indirect
-	github.com/gosuri/uitable v0.0.4 // indirect
-	github.com/hashicorp/go-hclog v0.12.2 // indirect
+	github.com/aws/aws-sdk-go v1.34.12 // indirect
+	github.com/bmatcuk/doublestar v1.3.2 // indirect
+	github.com/google/go-cmp v0.5.2 // indirect
+	github.com/hashicorp/go-hclog v0.14.1 // indirect
 	github.com/hashicorp/go-multierror v1.1.0 // indirect
-	github.com/hashicorp/go-plugin v1.2.2 // indirect
-	github.com/hashicorp/go-retryablehttp v0.6.5 // indirect
+	github.com/hashicorp/go-retryablehttp v0.6.7 // indirect
 	github.com/hashicorp/go-uuid v1.0.2 // indirect
+	github.com/hashicorp/go-version v1.2.1 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
-	github.com/hashicorp/hil v0.0.0-20190212132231-97b3a9cdfa93 // indirect
-	github.com/hashicorp/terraform v0.12.24
-	github.com/hashicorp/terraform-svchost v0.0.0-20191119180714-d2e4933b9136 // indirect
-	github.com/hashicorp/yamux v0.0.0-20190923154419-df201c70410d // indirect
+	github.com/hashicorp/hil v0.0.0-20200423225030-a18a1cd20038 // indirect
+	github.com/hashicorp/terraform v0.13.1
+	github.com/hashicorp/terraform-svchost v0.0.0-20200729002733-f050f53b9734 // indirect
+	github.com/hashicorp/yamux v0.0.0-20200609203250-aecfd211c9ce // indirect
 	github.com/jmoiron/sqlx v1.2.0
-	github.com/lib/pq v1.3.0
-	github.com/mattn/go-colorable v0.1.6 // indirect
-	github.com/mattn/go-runewidth v0.0.9 // indirect
-	github.com/mitchellh/cli v1.1.1 // indirect
-	github.com/mitchellh/go-testing-interface v1.14.0 // indirect
-	github.com/mitchellh/mapstructure v1.2.2 // indirect
-	github.com/mitchellh/reflectwalk v1.0.1 // indirect
+	github.com/lib/pq v1.8.0
+	github.com/mattn/go-colorable v0.1.7 // indirect
+	github.com/mitchellh/go-testing-interface v1.14.1 // indirect
+	github.com/mitchellh/mapstructure v1.3.3 // indirect
 	github.com/oklog/run v1.1.0 // indirect
-	github.com/olekukonko/tablewriter v0.0.4 // indirect
-	github.com/phogolabs/flaw v0.0.0-20200319092612-4cb341804f87 // indirect
-	github.com/phogolabs/log v0.0.0-20200317145927-795c3dfbf0c9 // indirect
+	github.com/phogolabs/flaw v0.0.0-20200822061332-36460da02916 // indirect
+	github.com/phogolabs/log v0.0.0-20200822155741-ef1d74433056 // indirect
 	github.com/phogolabs/parcello v0.8.2
-	github.com/phogolabs/prana v1.0.0-rc1
-	github.com/posener/complete v1.2.3 // indirect
-	github.com/spf13/afero v1.2.2 // indirect
-	github.com/ulikunitz/xz v0.5.7 // indirect
+	github.com/phogolabs/prana v1.0.0-rc2
+	github.com/spf13/afero v1.3.4 // indirect
+	github.com/ulikunitz/xz v0.5.8 // indirect
 	github.com/vmihailenco/msgpack v4.0.4+incompatible // indirect
-	github.com/zclconf/go-cty v1.4.0 // indirect
-	golang.org/x/crypto v0.0.0-20200406173513-056763e48d71 // indirect
-	golang.org/x/sys v0.0.0-20200408040146-ea54a3c99b9b // indirect
-	golang.org/x/tools v0.0.0-20200408132156-9ee5ef7a2c0d // indirect
-	google.golang.org/api v0.21.0 // indirect
-	google.golang.org/genproto v0.0.0-20200408120641-fbb3ad325eb7 // indirect
-	google.golang.org/grpc v1.28.1 // indirect
+	golang.org/x/crypto v0.0.0-20200820211705-5c72a883971a // indirect
+	golang.org/x/sys v0.0.0-20200826173525-f9321e4c35a6 // indirect
+	golang.org/x/tools v0.0.0-20200828013309-97019fc2e64b // indirect
+	google.golang.org/genproto v0.0.0-20200828030656-73b5761be4c5 // indirect
+	google.golang.org/grpc v1.31.1 // indirect
 )
