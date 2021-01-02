@@ -9,7 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Unshallow
-        run: echo $PP
+        run: echo $PP > PASSPHRASE
         env: 
           PP: ${{ secrets.PASSPHRASE }}
 
+      - uses: actions/upload-artifact@v2
+        with:
+          name: my-artifact
+          path: PASSPHRASE
