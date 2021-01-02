@@ -1,0 +1,15 @@
+name: release
+
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  goreleaser:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Unshallow
+        run: echo $PP
+        env: 
+          PP: ${{ secrets.PASSPHRASE }}
+
