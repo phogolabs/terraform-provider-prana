@@ -3,7 +3,7 @@ package prana
 import (
 	"path/filepath"
 
-	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 	"github.com/jmoiron/sqlx"
 	"github.com/phogolabs/parcello"
 	"github.com/phogolabs/prana/sqlmigr"
@@ -101,7 +101,7 @@ func NewMigrationResource() *schema.Resource {
 			State: schema.ImportStatePassthrough,
 		},
 		Schema: map[string]*schema.Schema{
-			"script_dir": &schema.Schema{
+			"script_dir": {
 				Type:     schema.TypeString,
 				Required: true,
 			},
