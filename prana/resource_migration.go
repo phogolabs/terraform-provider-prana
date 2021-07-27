@@ -1,11 +1,11 @@
 package prana
 
 import (
+	"os"
 	"path/filepath"
 
 	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 	"github.com/jmoiron/sqlx"
-	"github.com/phogolabs/parcello"
 	"github.com/phogolabs/prana/sqlmigr"
 )
 
@@ -21,15 +21,12 @@ func NewMigrationResource() *schema.Resource {
 
 		return &sqlmigr.Executor{
 			Provider: &sqlmigr.Provider{
-				FileSystem: parcello.Dir(dir),
+				FileSystem: os.DirFS(dir),
 				DB:         db,
 			},
 			Runner: &sqlmigr.Runner{
-				FileSystem: parcello.Dir(dir),
+				FileSystem: os.DirFS(dir),
 				DB:         db,
-			},
-			Generator: &sqlmigr.Generator{
-				FileSystem: parcello.Dir(dir),
 			},
 		}, nil
 	}
