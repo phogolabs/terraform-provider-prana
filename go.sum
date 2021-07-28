@@ -90,8 +90,8 @@ github.com/aws/aws-sdk-go v1.20.6/go.mod h1:KmX6BPdI08NWTb3/sm4ZGu5ShLoqVDhKgpiN
 github.com/aws/aws-sdk-go v1.25.43/go.mod h1:KmX6BPdI08NWTb3/sm4ZGu5ShLoqVDhKgpiN924inxo=
 github.com/aws/aws-sdk-go v1.37.0/go.mod h1:hcU610XS61/+aQV88ixoOzUoG7v3b31pl2zKMmprdro=
 github.com/aws/aws-sdk-go v1.38.29/go.mod h1:hcU610XS61/+aQV88ixoOzUoG7v3b31pl2zKMmprdro=
-github.com/aws/aws-sdk-go v1.40.8 h1:LBeBOKdgxaR1tknlENTBhcN8CjutpofbMJPtl/6Yug4=
-github.com/aws/aws-sdk-go v1.40.8/go.mod h1:585smgzpB/KqRA+K3y/NL/oYRqQvpNJYvLm+LY1U59Q=
+github.com/aws/aws-sdk-go v1.40.9 h1:pMq7LecsVESBgCfYrJFy/MELrOXbM0QmCr5I3wh6tLQ=
+github.com/aws/aws-sdk-go v1.40.9/go.mod h1:585smgzpB/KqRA+K3y/NL/oYRqQvpNJYvLm+LY1U59Q=
 github.com/aybabtme/rgbterm v0.0.0-20170906152045-cc83f3b3ce59/go.mod h1:q/89r3U2H7sSsE2t6Kca0lfwTK8JdoNGS/yzM/4iH5I=
 github.com/aymerick/raymond v2.0.2+incompatible h1:VEp3GpgdAnv9B2GFyTvqgcKvY+mfKMjPOA3SbKLtnU0=
 github.com/aymerick/raymond v2.0.2+incompatible/go.mod h1:osfaiScAUVup+UC9Nfq76eWqDhXlp+4UYaA8uhTBO6g=
@@ -425,8 +425,6 @@ github.com/phogolabs/log v0.0.0-20210430125128-bb23cd1dfac5 h1:MlaknYljrhKCT3wBN
 github.com/phogolabs/log v0.0.0-20210430125128-bb23cd1dfac5/go.mod h1:IvLsZtJyw+eLkm7BNaRFrfz33UNKtrsNNz+hj6RVC+A=
 github.com/phogolabs/parcello v0.8.1/go.mod h1:/HlY+yKSdyM8MUX9YvwT3+sED9SKXizc5zfuHDh6+to=
 github.com/phogolabs/parcello v0.8.2/go.mod h1:rtKgAK1yF6KZOllQDfcHvOzYYwV3kCt61LJybif3SCE=
-github.com/phogolabs/prana v1.0.0-rc4 h1:qHXYuyXgca0ht3YlrfyNIqEIAO7W6J1LYkMsUwDhmGU=
-github.com/phogolabs/prana v1.0.0-rc4/go.mod h1:y92Ktk/rxzeRC8/uf4Iq0X6AeTU+/KOwIPejZ564aiU=
 github.com/phogolabs/prana v1.0.0-rc7 h1:PQhn6g6YvlfKMBLeTOjNhBSC0L+lgOcpHNIju4ToY+U=
 github.com/phogolabs/prana v1.0.0-rc7/go.mod h1:y92Ktk/rxzeRC8/uf4Iq0X6AeTU+/KOwIPejZ564aiU=
 github.com/pierrec/lz4 v2.0.5+incompatible/go.mod h1:pdkljMzZIN41W+lC3N2tnIh5sFi+IEE17M5jbnwPHcY=
