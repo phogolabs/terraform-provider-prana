@@ -26,7 +26,7 @@ require (
 	github.com/mitchellh/go-testing-interface v1.14.1 // indirect
 	github.com/mitchellh/mapstructure v1.4.1 // indirect
 	github.com/oklog/run v1.1.0 // indirect
-	github.com/phogolabs/prana v1.0.0-rc7
+	github.com/phogolabs/prana v1.0.0-rc8
 	github.com/posener/complete v1.2.3 // indirect
 	github.com/spf13/afero v1.6.0 // indirect
 	github.com/ulikunitz/xz v0.5.10 // indirect
