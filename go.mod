@@ -7,7 +7,7 @@ require (
 	cloud.google.com/go/storage v1.16.0 // indirect
 	github.com/GoogleCloudPlatform/cloudsql-proxy v1.23.1
 	github.com/Masterminds/goutils v1.1.1 // indirect
-	github.com/aws/aws-sdk-go v1.40.9 // indirect
+	github.com/aws/aws-sdk-go v1.40.10 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
@@ -26,7 +26,7 @@ require (
 	github.com/mitchellh/go-testing-interface v1.14.1 // indirect
 	github.com/mitchellh/mapstructure v1.4.1 // indirect
 	github.com/oklog/run v1.1.0 // indirect
-	github.com/phogolabs/prana v1.0.0-rc8
+	github.com/phogolabs/prana v1.0.0-rc9
 	github.com/posener/complete v1.2.3 // indirect
 	github.com/spf13/afero v1.6.0 // indirect
 	github.com/ulikunitz/xz v0.5.10 // indirect
