@@ -33,7 +33,6 @@ require (
 	github.com/vmihailenco/tagparser v0.1.2 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/multierr v1.7.0 // indirect
-	golang.org/x/crypto v0.0.0-20210711020723-a769d52b0f97 // indirect
-	golang.org/x/net v0.0.0-20210726213435-c6fcb2dbf985 // indirect
+	golang.org/x/crypto v0.1.0 // indirect
 	google.golang.org/api v0.51.0 // indirect
 )
